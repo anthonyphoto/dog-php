@@ -69,17 +69,15 @@
           }
         }
 
-      }
-
-      
+      }      
     ?>
 
     <main class='main_bg' role='main'>
       <div id='js-signup-wr' class='row sign hidden'> 
           <span id='js-message-title' class='font_l ind_l'>Sign up</span>
           <span onclick='handleLoginClick()' class='ind_l text-link pointer'>Already registered? Please log in here</span>
-          <br /><br /><br /><br />
-          <form method="POST" id="js-signup-form" action="">
+          <div class='title-margin'></div>
+          <form method="POST" id="js-signup-form" class="form-wr" action="">
               <label for="email">Email</label><BR />
               <input type="email" class="w100 input-box mt6" id="email" name="email" required><BR /><BR />
               
@@ -107,8 +105,8 @@
         
           <span id='js-login-title' class='font_l ind_l'>Log In</span>
           <span id='js-signup-link-to-disable'  onclick='handleSignupClick()' class='ind_l text-link pointer'>Not a member yet? Please sign up here</span>
-          <br /><br /><br /><br />
-          <form method="POST" id="js-login-form" action="">
+          <div class='title-margin'></div>
+          <form method="POST" id="js-login-form" class="form-wr" action="">
               <label for="l-email">Email</label><BR />
               <input type="email" class="w100 input-box mt6" id="l-email" name="email" required><BR /><BR />
               <label for="l-password">Password</label><BR />

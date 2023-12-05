@@ -18,7 +18,7 @@
 
     <main class='main_bg' role='main'>
       <div class='row'> 
-        <p id='js-message-title' style="margin-bottom: 32px" class='font_l ind_l'>Search for Dog's pictures</p>
+        <p id='js-message-title' class='font_l ind_l title-margin'>Search for Dog's pictures</p>
         <div id='js-dog-pics-wr' class='pic-wr'>
         </div>
         <div id='js-search-wr' style="margin: 24px 5%;">

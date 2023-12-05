@@ -152,7 +152,6 @@ body {
   background-size: 100% !important;
   padding: 2rem 0 0 !important;
   display: block !important;
-  position: relative !important;
   color: white !important;
   height: 33rem !important;
 }
@@ -291,6 +290,26 @@ a:visited {
   display: none;
 }
 
+.header-name-font {
+  font-size: 3.6rem;
+}
+
+.header-desc-font {
+  font-size: 2.6rem;
+}
+
+.title-margin {
+  margin-bottom: 32px;
+}
+
+.footer-img {
+  width: auto;
+}
+
+.form-wr {
+  width: 100%;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner {
@@ -299,22 +318,89 @@ a:visited {
       height: 30rem !important;
   }
 
+  /* .banner {
+    background: url('./img/bg2.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-attachment: fixed !important;
+    background-size: 100% !important;
+    padding: 2rem 0 0 !important;
+    display: block !important;
+    color: white !important;
+    height: 33rem !important;
+  } */
+  
+
   .sign {
       width: 100%;
       min-width: 100%;
   }
+  .pic-wr {
+    width: 100%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(0, 50%);
+  }
+
+  .pic {
+    width: 100%;
+    height: auto;
+  }
+
+  /* .pic-item {
+    height: auto;
+
+  } */
+
 }
   
   /* Mobile Styles */
 @media only screen and (max-width: 767px) {
-  .banner {
-      background: url('./img/bg2.jpg') !important;
-      background-size: auto 100% !important;
-      height: 18rem !important;
+
+  .header-name-font {
+    font-size: 3.2rem;
+  }
+  .header-desc-font {
+    font-size: 1.6rem;
+  }
+
+  .main_bg {
+    margin-top: 48px;
+    padding: 8px 4px;
+  }
+
+  .title-margin {
+    margin-bottom: 8px;
   }
   
+  .footer-img {
+    width: 200px;
+  }
+  
+  .c1, .c2 {
+    font-size: 16px;
+  }
+
+  .form-wr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner {
+    background: url('./img/bg3.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-attachment: fixed !important;
+    background-size: auto 80% !important;
+    padding: 2rem 0 0 !important;
+    display: block !important;
+    color: white !important;
+    height: 22rem !important;
+  }
+  
+  
   .font_m {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 0;
   }
 
@@ -328,11 +414,12 @@ a:visited {
   }
 
   .logo {
-    margin-left: 0;
+    margin-left: -24px;
+    height: 40px;
   }
 
   .ind_l {
-    margin-left: 0;
+    margin-left: 4px;
   }
 
   .row {
@@ -347,8 +434,8 @@ a:visited {
 
   .pic-wr {
     width: 100%;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(0, 30%);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(0, 50%);
   }
 
   .pic {
@@ -367,18 +454,22 @@ a:visited {
   .font_l {
     font-size: 1.4rem;
   }
+
   .mg_top {
-    margin-top: 4px;
+    margin-top: 16px;
   }
+
   .sign {
     padding: 0;
   }
 
   .btn_black {
     font-size: 1rem;
-    margin: 0;
-    padding: 6px;
-    border-radius: 12px;
+    margin: 16px 0 0;
+    padding: 10px;
+    color:#fff;
+    background-color: #2a2c2d;
+    border-radius: 16px;
   }
     
 }

@@ -41,7 +41,7 @@
       <div id='js-login-wr' class='row sign'> 
           <span id='js-login-title' class='font_l ind_l'><span id='js-fav-name' class='font_el'></span>'s Favorites</span>
           <span id='js-signup-link-to-disable'  onclick="window.location.href='./index.php'" class='ind_l text-link pointer'>Search more pictures?</span>
-          <br /><br /><br /><br />
+          <div class='title-margin'></div>
           <form method="POST" id="js-login-form" action="">
               <label for="js-note" class="label">Description: </label><br />
               <textarea style="width: 100%; height: auto;" onchange="console.log('AK')" class="rem1 input-box textarea" id="js-note" name="note" rows="6" cols="50"><?php echo $description ?></textarea><br /><br />
