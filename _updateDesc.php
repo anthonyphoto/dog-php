@@ -8,6 +8,7 @@
     if (isset($_GET['desc'])) {
       $desc = $_GET['desc'];
     }
+    $desc = htmlspecialchars($desc);
 
     $response = updateDesc($userID, $desc);
     error_log("--res" . $response);

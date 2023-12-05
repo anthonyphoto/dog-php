@@ -40,7 +40,7 @@
     <main class='main_bg' role='main'>
       <div id='js-login-wr' class='row sign'> 
           <span id='js-login-title' class='font_l ind_l'><span id='js-fav-name' class='font_el'></span>'s Favorites</span>
-          <span id='js-signup-link-to-disable'  onclick="window.location.href='./index.php'" class='ind_l text-link pointer'>Search more pictures?</span>
+          <span id='js-signup-link-to-disable'  onclick="window.location.href='./index.php'" class='ind_l text-link pointer'>Search for more pics?</span>
           <div class='title-margin'></div>
           <form method="POST" id="js-login-form" action="">
               <label for="js-note" class="label">Description: </label><br />
