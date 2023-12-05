@@ -34,7 +34,6 @@
         error_log("No desc found");
       } else {
         $description = $row['description'];
-        error_log("AK: desc" . $description);
       }
     ?>
 
@@ -44,7 +43,7 @@
           <span id='js-signup-link-to-disable'  onclick="window.location.href='./index.php'" class='ind_l text-link pointer'>Search more pictures?</span>
           <br /><br /><br /><br />
           <form method="POST" id="js-login-form" action="">
-              <label for="date" class="label">Description: </label><br />
+              <label for="js-note" class="label">Description: </label><br />
               <textarea style="width: 100%; height: auto;" onchange="console.log('AK')" class="rem1 input-box textarea" id="js-note" name="note" rows="6" cols="50"><?php echo $description ?></textarea><br /><br />
               <input type="hidden" name="type" value="desc">
               <button disabled='true' id="js-update-desc-btn" onclick="updateDesc();" type="button" style="height:46px;font-size:1.2rem;" class="w100 input-box mt6">Save</button>

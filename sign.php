@@ -109,9 +109,9 @@
           <span id='js-signup-link-to-disable'  onclick='handleSignupClick()' class='ind_l text-link pointer'>Not a member yet? Please sign up here</span>
           <br /><br /><br /><br />
           <form method="POST" id="js-login-form" action="">
-              <label for="email">Email</label><BR />
+              <label for="l-email">Email</label><BR />
               <input type="email" class="w100 input-box mt6" id="l-email" name="email" required><BR /><BR />
-              <label for="password">Password</label><BR />
+              <label for="l-password">Password</label><BR />
               <input type="password" class="w100 input-box mt6" id="l-password" name="password" required><BR /><BR /><BR />
               <input type="hidden" name="type" value="login">
               <button id="js-login-submit-btn" type="submit" class="btn-red w100 input-box mt6 pointer">Log In</button>
@@ -126,7 +126,7 @@
     <script type="text/javascript" src="./js/index.js"></script>
     <?php 
       if ($type == 'signup' && $error == '') {
-        error_log("AK: re" . $result);
+        error_log(": re" . $result);
         echo "<script>
                 document.getElementById('js-signup-wr').classList.add('hidden');
                 document.getElementById('js-login-wr').classList.remove('hidden');

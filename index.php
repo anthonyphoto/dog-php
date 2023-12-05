@@ -22,7 +22,7 @@
         <div id='js-dog-pics-wr' class='pic-wr'>
         </div>
         <div id='js-search-wr' style="margin: 24px 5%;">
-            <label style="font-size:1.2rem;margin-right: 18px;" for="breed">Type a breed name (e.g., poodle) : </label>
+            <label style="font-size:1.2rem;margin-right: 18px;" for="js-breed">Type a breed name (e.g., poodle) : </label>
             <input type="text" class="search-input input-box mt6" id="js-breed" name="breed"><BR /><BR />
             </div>
         <div id='js-breed-list-title' class='r border-bottom'>
