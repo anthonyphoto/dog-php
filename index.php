@@ -16,7 +16,7 @@
   <body>
     <?php include '_header.html'; ?>
 
-    <main class='main_bg' role='main'>
+    <main class='main_bg fi-short' role='main'>
       <div class='row'> 
         <p id='js-message-title' class='font_l ind_l title-margin'>Search for Dog's pictures</p>
         <div id='js-dog-pics-wr' class='pic-wr'>

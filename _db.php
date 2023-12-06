@@ -5,6 +5,12 @@
   $user = "root"; 
   $pass = "Gromit2002!";
 
+  // Site deployment
+  // $host = "sql306.infinityfree.com";
+  // $db = "if0_35563381_dainkim_woofsite";
+  // $user = "if0_35563381"; 
+  // $pass = "IZysVC6P6C";
+
   function addHistory($userID, $action) {
     global $host, $user, $pass, $db;
     $sql = "INSERT INTO History (userID, date, action) VALUES ($userID, NOW(), '$action')";

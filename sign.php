@@ -72,7 +72,7 @@
       }      
     ?>
 
-    <main class='main_bg' role='main'>
+    <main class='main_bg fi-short' role='main'>
       <div id='js-signup-wr' class='row sign hidden'> 
           <span id='js-message-title' class='font_l ind_l'>Sign up</span>
           <span onclick='handleLoginClick()' class='ind_l text-link pointer'>Already registered? Please log in here</span>
