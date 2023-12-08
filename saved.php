@@ -44,7 +44,7 @@
           <div class='title-margin'></div>
           <form method="POST" id="js-login-form" action="">
               <label for="js-note" class="label">Description: </label><br />
-              <textarea style="width: 100%; height: auto;" onchange="console.log('AK')" class="rem1 input-box textarea" id="js-note" name="note" rows="6" cols="50"><?php echo $description ?></textarea><br /><br />
+              <textarea style="width: 100%; height: auto;" class="rem1 input-box textarea" id="js-note" name="note" rows="6" cols="50"><?php echo $description ?></textarea><br /><br />
               <input type="hidden" name="type" value="desc">
               <button disabled='true' id="js-update-desc-btn" onclick="updateDesc();" type="button" style="height:46px;font-size:1.2rem;" class="w100 input-box mt6">Save</button>
           </form>
@@ -52,7 +52,7 @@
       <div id='js-dog-pics-wr' class='pic-wr'>
         <?php while ($row = $result->fetch_assoc()) : ?>
           <div onclick="deleteFavorite('<?php echo $row['id'] ?>')" class='pic-item fi-short pointer'>
-              <img class='pic' src='<?php echo $row['imageLink'] ?>'>
+              <img class='pic' alt="<?php echo $row['id'] ?>" src='<?php echo $row['imageLink'] ?>'>
               <i class="fa fa-trash icon fi-short pointer" style="color:#B22E19;font-size:8rem;"></i>
           </div>
         <?php endwhile; ?>

@@ -16,9 +16,10 @@ INSERT INTO Users (email, password, fname, lname, description) VALUES ('sarahliu
 
 
 CREATE TABLE SavedImages (
-    id varchar(10) primary key not null UNIQUE,
+    id varchar(10) not null,
 	userID int(20) not null,
     imageLink varchar(200) not null,
+    PRIMARY KEY (id, userID),
     FOREIGN KEY fk(userID) REFERENCES Users(userID)
 );
 

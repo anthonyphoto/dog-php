@@ -102,17 +102,18 @@
           </form>
       </div>
       <div id='js-login-wr' class='row sign'> 
+      <span style="color: #B22E19; " class="text-link">Demo account: demo/123</span><BR /><BR />
         
           <span id='js-login-title' class='font_l ind_l'>Log In</span>
           <span id='js-signup-link-to-disable'  onclick='handleSignupClick()' class='ind_l text-link pointer'>Not a member yet? Please sign up here</span>
           <div class='title-margin'></div>
           <form method="POST" id="js-login-form" class="form-wr" action="">
-              <label for="l-email">Email</label><BR />
-              <input type="email" class="w100 input-box mt6" id="l-email" name="email" required><BR /><BR />
-              <label for="l-password">Password</label><BR />
-              <input type="password" class="w100 input-box mt6" id="l-password" name="password" required><BR /><BR /><BR />
-              <input type="hidden" name="type" value="login">
-              <button id="js-login-submit-btn" type="submit" class="btn-red w100 input-box mt6 pointer">Log In</button>
+            <label for="l-email">Email or Username</label><BR />
+            <input type="text" class="w100 input-box mt6" id="l-email" placeholder="demo" name="email" required><BR /><BR />
+            <label for="l-password">Password</label><BR />
+            <input type="password" class="w100 input-box mt6" id="l-password" placeholder="123" name="password" required><BR /><BR /><BR />
+            <input type="hidden" name="type" value="login">
+            <button id="js-login-submit-btn" type="submit" class="btn-red w100 input-box mt6 pointer">Log In</button>
           </form>
       </div>
 
